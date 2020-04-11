@@ -9,3 +9,5 @@
 **Сложность:** средняя
 
 **Предполагаемый макет интферфейса:** 
+
+![screenshot of sample](https://github.com/OlgaIvanenko/PythonProject/blob/master/project/ProjPythonPicture.png)
