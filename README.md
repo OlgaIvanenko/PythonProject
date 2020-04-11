@@ -10,4 +10,4 @@
 
 **Предполагаемый макет интферфейса:** 
 
-![screenshot of sample](https://github.com/OlgaIvanenko/PythonProject/blob/master/project/picture.png)
+![screenshot of sample](https://github.com/OlgaIvanenko/PythonProject/blob/master/project/https://github.com/OlgaIvanenko/PythonProject/blob/master/project/picture.PNG)
