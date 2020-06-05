@@ -136,7 +136,9 @@ class Main(Frame):
         self.step.place(x=378, y=3)
         self.step.image = render
 
-        # наполним вспомогательный массив-клон поля
+        # наполним вспомогательный массив-клон поля.
+        # Изначально map пустой, а затем его заполняют картинками и делают его копию в CloneMap()
+        # и пользователь может ходить.
         for y in range(0, self.Game.max):
             self.map.append([])
             for x in range(0, self.Game.max):
@@ -165,7 +167,7 @@ class Main(Frame):
                 create_window_end_game()
             else:
                 if self.Bot:
-                    if self.Game.actionPlayer == 1:  # or self.Game.actionPlayer == 1:  # два бота играют сам с собой
+                    if self.Game.actionPlayer == 1:  # два бота играют сам с собой
                         self.Game.BotStep()
                         app.SetScore()
                         self.after(300, self.timer_Tick, 0)
@@ -185,7 +187,7 @@ class Main(Frame):
                     bgcolor = 0 if (x + y) % 2 == 0 else 1
                     self.Draw(y, x, player, bgcolor, i)
 
-
+    # отображает уже изменившиеся ячейки
     def Draw(self, x, y, player, bgcolor, i):
         if player == 0:
             self.img.paste(self.p.Field[bgcolor], (x * sizeBall, y * sizeBall))
